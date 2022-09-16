@@ -1,19 +1,19 @@
 from arraylist import *
 from linkedlist import *
 
-class Stack:
+class MyQueue:
     def __init__(self):
         pass
     
     def push(self, x):
         """
-        Push an element onto the top of a stack
+        Put an element at end of the queue
         """
         pass
     
     def pop(self):
         """
-        Pop and return the top element of the stack
+        Remove and return the element at the front of the queue
         """
         pass
     
@@ -24,8 +24,8 @@ class Stack:
         return True
 
 if __name__ == '__main__':
-    s = Stack()
+    q = MyQueue()
     for x in range(10):
-        s.push(x)
-    while not s.isempty():
-        print(s.pop())
+        q.push(x)
+    while not q.isempty():
+        print(q.pop())

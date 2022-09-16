@@ -22,6 +22,10 @@ class ArrayList:
         ## If array runs out of space, create a new array
         ## with double the size using np.zeros, and copy
         ## everything over
+        newarr = np.zeros(len(self.arr)*2)
+        
+        self.arr = newarr
+
     
     def remove(self, idx):
         """
